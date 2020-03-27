@@ -1,4 +1,5 @@
 <div class='post-wrapper <%= post.whisper? ? "whisper" : "" %> <%= use_excerpt ? "excerpt" : ""%>'>
-  <b><%= post.user.name %>, <%= post.user.email %></b><br/>
+  <!--<b><%= post.user.name %>, <%= post.user.email %></b><br/>-->
+  <b><%= post.user.user_profile.bio_raw %></b><br/>
   <div class='body'><%= format_for_email(post, use_excerpt) %></div>
 </div>
